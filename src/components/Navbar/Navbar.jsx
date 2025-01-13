@@ -9,6 +9,7 @@ const Navbar = () => {
 
     const { setCurrency, currency } = useContext(CoinContext)
 
+
     const currencyHandler = (event) => {
         switch (event.target.value) {
                 case "usd":
@@ -40,7 +41,6 @@ const Navbar = () => {
                 <option value="eur">EUR</option>
                 <option value="inr">INR</option>
             </select>
-            <button>Sign up <img src={arrow_icon} alt="" /></button>
         </div>
         </div>
   )
